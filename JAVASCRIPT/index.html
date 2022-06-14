@@ -7,12 +7,49 @@
     <title>JavaScript Lessons</title>
 </head>
 <body>
-    <a href="./CSS/index.html">CSS (to specify the layout of web pages)</a>
-    <br><br>
-    <a href="./HTML/index.html">HTML (to define the content of web pages)</a>
-    <br><br>
-    <a href="./JAVASCRIPT/index.html">JavaScript (to program the behavior of web pages)</a>
+<h1>Introduction</h1>
+<h2>JavaScript Can Change HTML Content</h2>
+<code>
+    document.getElementById("demo").innerHTML = "Hello JavaScript";
+</code>
 
+<p><strong>Note: </strong>JavaScript accepts both double and single quotes.</p>
+
+<h2>JavaScript Can Change HTML Attribute Values</h2>
+<code>
+    document.getElementById('myImage').src = 'pic_bulbon.gif';
+</code>
+
+<h2>JavaScript Can Change HTML Styles (CSS)</h2>
+
+<code>
+    document.getElementById("demo").style.fontSize = "35px";
+</code>
+
+<h2>JavaScript Can Hide HTML Elements</h2>
+<code>
+    document.getElementById("demo").style.display = "none";
+</code>
+
+<h2>JavaScript Can Show HTML Elements</h2>
+<code>
+    document.getElementById("demo").style.display = "block";
+</code>
+
+<h1>Where To</h1>
+<p>In HTML, JavaScript code is inserted between script tags.
+<br><br>
+You can place any number of scripts in an HTML document.
+<br><br>
+Scripts can be placed in the body, or in the head section of an HTML page, or in both.
+<br><br>
+Placing scripts at the bottom of the body element improves the display speed, because script interpretation slows down the display.</p>
+<p>Scripts can also be placed in external files.
+<br><br>
+External scripts are practical when the same code is used in many different web pages.
+<br><br>To use an external script, put the name of the script file in the src (source) attribute of a script tag.
+<br><br>You can place an external script reference in head or body as you like.
+<br><br>The script will behave as if it was located exactly where the script tag is located.</p>
 
 </body>
 </html>
