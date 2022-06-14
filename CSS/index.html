@@ -19,34 +19,45 @@
     
     <h2>The CSS Element Selector</h2>
 
-    <code>p {
+    <code>
+        p {
         text-align: center;
         color: red;
-      }
+        }
+    </code>
+    <br><br>
+    <code>
+        h1, h2, p {
+            text-align: center;
+            color: red;
+        }
     </code>
 
     <h2>The CSS Id Selector</h2>
     
-    <code>#para1 {
+    <code>
+        #para1 {
         text-align: center;
         color: red;
-      }
+        }
     </code>
     <br><br>
     <strong>Note: </strong>An id name cannot start with a number!
-    
+
     <h2>The CSS Class Selector</h2>
 
-    <code>.center {
+    <code>
+        .center {
         text-align: center;
         color: red;
-      }
+        }
     </code>
     <br><br>
-    <code>p.center {
+    <code>
+        p.center {
         text-align: center;
         color: red;
-      }
+        }
     </code>
     <br><br>
     <strong>Note: </strong>A class name cannot start with a number!
@@ -54,11 +65,38 @@
     <h2>The CSS Universal Selector</h2>
     <strong>The universal selector (*) selects all HTML elements on the page.</strong>
     <br><br>
-    <code>* {
+    <code>
+        * {
         text-align: center;
         color: blue;
-      }
+        }
     </code>
 
+    <h3>All CSS Simple Selectors</h3>
+    <ul>
+    <p>#id</p>
+    <br>#firstname
+    <br>Selects the element with id="firstname"
+
+    <p>.class</p>
+    <br>.intro
+    <br>Selects all elements with class="intro"
+
+    <p>element.class</p>
+    <br>p.intro
+    <br>Selects only p elements with class="intro"
+    
+    <p>*</p>
+    <br>*
+    <br>Selects all elements
+    
+    <p>element</p>
+    <br>p
+    <br>Selects all p elements
+    
+    <p>element,element,..</p>
+    <br>div, p
+    <br>Selects all div elements and all p elements
+    </ul>
 </body>
 </html>
