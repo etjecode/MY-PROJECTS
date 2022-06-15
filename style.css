@@ -15,17 +15,16 @@ p, li {
 }
 
 strong {
-    color: blueviolet;
+    color: wheat;
 }
 
 code {
     color: black;
     font-size: 18px;
     background-color: wheat;
-    padding: 10px;
 }
 
-a, div {
+a {
     color: aqua;
     text-decoration: none;
     border: 1px solid aqua;
