@@ -245,13 +245,14 @@
         </ul>
         </p>
 
-        <h2>let Hoisting</h2>
+        <h2>Hoisting</h2>
         <p>
         <ul>
             <li>Variables defined with var are hoisted to the top and can be initialized at any time.</li>
             <li>Meaning: You can use the variable before it is declared.</li>
-            <li>Variables defined with let are also hoisted to the top of the block, but not initialized.</li>
-            <li>Meaning: Using a let variable before it is declared will result in a ReferenceError.</li>
+            <li>Variables defined with let and const are also hoisted to the top of the block, but not initialized.</li>
+            <li>Meaning: Using a let or const variable before it is declared will result in a ReferenceError.</li>
+            </li>
         </ul>
         </p>
 
@@ -277,6 +278,66 @@
 
         <h2>JavaScript Arithmetic</h2>
         <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+
+
+        <h2>Constant Objects and Arrays</h2>
+
+<p>The keyword const is a little misleading. It does not define a constant value. It defines a constant reference to a value. Because of this you can NOT:
+    <ul>
+<li>Reassign a constant value</li>
+<li>Reassign a constant array</li>
+<li>Reassign a constant object</li>
+</ul>
+</p>
+
+<p>But you CAN:
+    <ul>
+        <li>Change the elements of constant array</li>
+        <li>Change the properties of constant object</li>
+    </ul></p>
+
+    <h3>Constant Arrays</h3>
+    <p>You can change the elements of a constant array but you can NOT reassign the array.</p>
+
+    <h3>Constant Objects</h3>
+    <p>You can change the properties of a constant object but you can NOT reassign the object.</p>
+
+    </div>
+
+    <div>
+        <h1>JavaScript Type Operators</h1>
+        <ul><li><strong>typeof</strong> returns the type of a variable.</li>
+            <li><strong>instanceof</strong> returns true if an object is an instance of an object type.</li></ul>
+    </div>
+
+    <div>
+        <h1>Data Types</h1>
+        <h2>Booleans</h2>
+        <p>
+            <ul>
+                <li>A JavaScript Boolean represents one of two values: true or false.</li>
+                <li>The Boolean value of an expression is the basis for all JavaScript comparisons and conditions.</li>
+                <li>Everything With a "Value" is True</li>
+                <li>Everything Without a "Value" is False</li>
+            </ul>
+        </p>
+
+        <h3>JavaScript Booleans as Objects</h3>
+<p>Normally JavaScript booleans are primitive values created from literals.
+
+But booleans can also be defined as objects with the keyword new.
+
+
+Do not create Boolean objects.
+
+The new keyword complicates the code and slows down execution speed.
+
+Boolean objects can produce unexpected results.
+Booleans and Boolean objects cannot be safely compared.
+
+
+Comparing two JavaScript objects always return false.
+</p>
 
     </div>
 
