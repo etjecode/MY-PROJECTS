@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lessons</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div>
+    <h1>JavaScript Variables</h1>
+    <p>Variables are containers for storing data values.</p>
+    <h2>4 Ways to Declare a JavaScript Variable</h2>
+
+    <h3>var</h3>
+    <p>
+    <ul>
+        <li>The var keyword is used in all JavaScript code from 1995 to 2015.</li>
+        <li>Variables defined with var can be Redeclared.</li>
+        <li>If you re-declare a JavaScript variable declared with var, it will not lose its value.</li>
+        <li>Variables declared with the var keyword can NOT have block scope.</li>
+        <li>You can use the variable defined with var before it is declared.</li>
+    </ul>
+    </p>
+
+    <h4>When to use JavaScript var</h4>
+    <p>
+    <ul>
+        <li>The var keyword is used in all JavaScript code from 1995 to 2015.</li>
+        <li>The let and const keywords were added to JavaScript in 2015.</li>
+        <li>If you want your code to run in older browser, you must use var.</li>
+    </ul>
+    </p>
+
+    <h3>let</h3>
+    <p>
+        <ul>
+            <li>The let keyword was introduced in ES6 (2015).</li>
+            <li>Variables defined with let cannot be Redeclared.</li>
+            <li>You cannot accidentally redeclare a variable.</li>
+            <li>Variables defined with let have Block Scope.</li>
+            <li>Variables defined with let must be Declared before use.</li>
+        </ul>
+    </p>
+
+    <h4>When to use JavaScript let</h4>
+    <p>
+        <ul>
+            <li>If you want a general rule: always declare variables with const.</li>
+            <li>If you think the value of the variable can change, use let.</li>
+        </ul>
+    </p>        
+
+    <h3>const</h3>
+    <p>
+        <ul>
+            <li>The const keyword was introduced in ES6 (2015).</li>
+            <li>Variables defined with const cannot be Redeclared.</li>
+            <li>Variables defined with const cannot be Reassigned.</li>
+            <li>JavaScript const variables must be assigned a value when they are declared.</li>
+            <li>Variables defined with const have Block Scope.</li>
+        </ul>
+    </p>
+
+    <h4>When to use JavaScript const</h4>
+    <p>As a general rule, always declare a variable with const unless you know that the value will change.
+
+    <p>
+    <ul>Use const when you declare:
+        <li>A new Array</li>
+        <li>A new Object</li>
+        <li>A new Function</li>
+        <li>A new RegExp</li>
+    </ul>
+    </p>
+
+    <p><strong>Note: </strong>It's a good programming practice to declare all variables at the beginning of a
+        script.</p>
+
+    <h2>Block Scope</h2>
+    <p>
+    <ul>
+        <li>Before ES6 (2015), JavaScript had only <strong>Global Scope</strong> and <strong>Function Scope</strong>.</li>
+        <li>ES6 introduced two important new JavaScript keywords: let and const.</li>
+        <li>These two keywords provide <strong>Block Scope</strong> in JavaScript.</li>
+        <li>Variables declared inside a { } block cannot be accessed from outside the block.</li>
+        <li>Variables declared with the var keyword can NOT have block scope.</li>
+        <li>Variables declared inside a { } block can be accessed from outside the block.</li>
+    </ul>
+    </p>
+
+    <h2>undefined</h2>
+    <p>A variable declared without a value will have the value <strong>undefined</strong></p>
+
+    <h2>Re-declaring JavaScript Variables</h2>
+    <p>
+    <ul>
+        <li>Variables defined with var can be Redeclared.</li>
+        <li>If you re-declare a JavaScript variable declared with var, it will not lose its value.</li>
+        <li>You cannot re-declare a variable declared with let or const.</li>
+        <li>However, redeclaring a variable using the var keyword can impose problems.</li>
+        <li>Redeclaring a variable inside a block will also redeclare the variable outside the block.</li>
+        <li>Redeclaring a variable using the let keyword can solve this problem.</li>
+        <li>Redeclaring a variable inside a block will not redeclare the variable outside the block.</li>
+        <li>Redeclaring a JavaScript variable with var is allowed anywhere in a program.</li>
+        <li>With let, redeclaring a variable in the same block is NOT allowed.</li>
+        <li>However, redeclaring a variable with let, in another block, IS allowed.</li>
+    </ul>
+    </p>
+
+    <h2>Hoisting</h2>
+    <p>
+    <ul>
+        <li>Variables defined with var are hoisted to the top and can be initialized at any time.</li>
+        <li>Meaning: You can use the variable before it is declared.</li>
+        <li>Variables defined with let and const are also hoisted to the top of the block, but not initialized.</li>
+        <li>Meaning: Using a let or const variable before it is declared will result in a ReferenceError.</li>
+        </li>
+    </ul>
+    </p>
+
+    <h2>JavaScript Identifiers</h2>
+    <p>The general rules for constructing names for variables (unique identifiers) are:
+    <ul>
+        <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+        <li>Names must begin with a letter (A-Z or a-z).</li>
+        <li>Names can also begin with a dollar sign ($) or an underscore (_).</li>
+        <li>Names are case sensitive.</li>
+        <li>Reserved words (like JavaScript keywords) cannot be used as names.</li>
+    </ul>
+    <p><strong>Notes: </strong>
+    <ul>
+        <li>Numbers are not allowed as the first character in names.</li>
+        <li>JavaScript treats $ and _ as letters.</li>
+        <li>Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an
+            alias for the main function in a JavaScript library.</li>
+        <li>Using the underscore is not very common in JavaScript, but a convention among professional programmers
+            is to use it as an alias for "private (hidden)" variables.</li>
+    </ul>
+    </p>
+
+    <h2>JavaScript Arithmetic</h2>
+    <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+
+
+    <h2>Constant Objects and Arrays</h2>
+
+<p>The keyword const is a little misleading. It does not define a constant value. It defines a constant reference to a value. Because of this you can NOT:
+<ul>
+<li>Reassign a constant value</li>
+<li>Reassign a constant array</li>
+<li>Reassign a constant object</li>
+</ul>
+</p>
+
+<p>But you CAN:
+<ul>
+    <li>Change the elements of constant array</li>
+    <li>Change the properties of constant object</li>
+</ul></p>
+
+<h3>Constant Arrays</h3>
+<p>You can change the elements of a constant array but you can NOT reassign the array.</p>
+
+<h3>Constant Objects</h3>
+<p>You can change the properties of a constant object but you can NOT reassign the object.</p>
+
+</div>
+
+<div>
+    <h1>JavaScript Type Operators</h1>
+    <ul><li><strong>typeof</strong> returns the type of a variable.</li>
+        <li><strong>instanceof</strong> returns true if an object is an instance of an object type.</li></ul>
+</div>
+
+<footer>
+    <a href="index.html">Before: Introduction</a>
+    <a href="data-types.html">After: Data Types</a>
+</footer>
+
+</body>
+
+</html>

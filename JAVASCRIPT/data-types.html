@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lessons</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<div>
+    <h1>Data Types</h1>
+    <h2>Booleans</h2>
+    <p>
+        <ul>
+            <li>A JavaScript Boolean represents one of two values: true or false.</li>
+            <li>The Boolean value of an expression is the basis for all JavaScript comparisons and conditions.</li>
+            <li>Everything With a "Value" is True</li>
+            <li>Everything Without a "Value" is False</li>
+        </ul>
+    </p>
+
+    <h3>JavaScript Booleans as Objects</h3>
+<p><ul>
+<li>
+Normally JavaScript booleans are primitive values created from literals.</li>
+<li>But booleans can also be defined as objects with the keyword new.</li>
+<li>Do not create Boolean objects.</li>
+<li>The new keyword complicates the code and slows down execution speed.</li>
+<li>Boolean objects can produce unexpected results.</li>
+
+</ul>
+<strong>Note: </strong>Comparing two JavaScript objects always return false.</p>
+
+<h2>Numbers</h2>
+<h3>NaN (Not a Number)</h3>
+<p>
+<ul>
+<li>NaN is a JavaScript reserved word indicating that a number is not a legal number.</li>
+<li>Trying to do arithmetic with a non-numeric string will result in NaN.</li>
+<li>You can use the global JavaScript function isNaN() to find out if a value is a NaN.</li>
+<li>NaN is a number: typeof NaN returns number.</li>  
+</ul>
+</p>
+
+<h3>Infinity</h3>
+<p><ul>
+<li>Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.</li>
+<li>Division by 0 (zero) also generates Infinity.</li>
+<li>Infinity is a number: typeof Infinity returns number.</li>
+</ul></p>
+</div>
+
+<h3>JavaScript Numbers as Objects</h3>
+<p>
+    <ul>
+        <li>Normally JavaScript numbers are primitive values created from literals.</li>
+        <li>But numbers can also be defined as objects with the keyword new.</li>
+        <li>Comparing two JavaScript objects always returns false.</li>
+    </ul>
+</p>
+
+<h3>JavaScript Number Methods</h3>
+<p>
+    <ul>
+        <li>Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects).</li>
+        <li>But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.</li>
+    </ul>
+</p>
+
+<ul><li>toString() : returns a number as a string.</li>
+    <li>toExponential() : returns a string, with a number rounded and written using exponential notation. A parameter defines the number of characters behind the decimal point. The parameter is optional. If you don't specify it, JavaScript will not round the number.</li>
+    <li>toFixed() : returns a string, with the number written with a specified number of decimals.</li>
+    <li>toPrecision() : returns a string, with a number written with a specified length.</li>
+    <li>valueOf() : returns a number as a number.</li>
+</ul>
+
+
+<strong>Notes: </strong><br>
+<ul>
+<li>All number methods can be used on any type of numbers (literals, variables, or expressions).</li>
+<li>In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object).</li>
+<li>The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.</li> 
+<li>There is no reason to use it in your code.</li>
+<li>All JavaScript data types have a valueOf() and a toString() method.</li>
+</ul>
+</p>
+
+<h3>Global JavaScript Methods (used with numbers)</h3>
+
+<p>
+<ul>
+    <li>JavaScript global methods can be used on all JavaScript data types.</li>
+    <li>There are 3 JavaScript methods that can be used to convert variables to numbers.</li>
+    <li>These are the most relevant methods, when working with numbers.</li>
+    <li>These methods are not number methods, but global JavaScript methods.</li>
+</ul>
+<br><br>
+<ul>
+    <li>Number() : returns a number, converted from its argument. </li>
+    <li>It can be used to convert JavaScript variables to numbers.</li>
+    <li>It can also convert a date to a number and it returns the number of milliseconds since 1.1.1970.</li>
+    <br><br>
+    <li>parseFloat() : parses its argument and returns a floating point number.</li>
+    <li>It parses a string and returns a number. Spaces are allowed. Only the first number is returned.</li>
+    <br><br>
+    <li>parseInt() : parses its argument and returns an integer.</li>
+    <li>It parses a string and returns a whole number. Spaces are allowed. Only the first number is returned.</li>
+    <br><br>
+    <li><strong>Note: </strong>In these methods, if the number cannot be converted, NaN is returned.</li>
+</ul>
+</p>
+
+<h3>JavaScript Number Properties</h3>
+<p>
+<ul>
+    <li>MAX_VALUE : Returns the largest number possible in JavaScript</li>
+    <li>MIN_VALUE : Returns the smallest number possible in JavaScript</li>
+    <li>POSITIVE_INFINITY : Represents infinity (returned on overflow)</li>
+    <li>NEGATIVE_INFINITY : Represents negative infinity (returned on overflow)</li>
+    <li>NaN	: Represents a "Not-a-Number" value</li>
+</ul>
+</p>
+<p><strong>Notes: </strong>
+    <ul><li>Properties cannot be used on variables.</li>
+        <li>Number properties belong to the JavaScript's number object wrapper called Number.</li>
+        <li>These properties can only be accessed as Number.MAX_VALUE.</li>
+        <li>Using myNumber.MAX_VALUE, where myNumber is a variable, expression, or value, will return undefined.</li>
+    </ul>
+</p>
+
+<footer>
+    <a href="variables.html">Before: Variables</a>
+    <a href="#">After:</a>
+</footer>
+
+</body>
+
+</html>
