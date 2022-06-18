@@ -122,9 +122,13 @@
 
         <p>
             <ul>
-                <li><b>length : returns the length of a string
-                </b></li>
+                <li><b>length</b> : returns the length of a string</li>
                 <br><br>There are 3 methods for extracting a part of a string:
+                <ol>
+                    <li><b>slice(start, end)</b></li>
+                    <li><b>substring(start, end)</b></li>
+                    <li><b>substr(start, length)</b></li>
+                </ol>
                 <li><b>slice(start, end)</b></li>
                 <strong>Note: </strong>If a parameter is negative, the position is counted from the end of the string.
                 <li><b>substring(start, end)</b></li>
@@ -154,6 +158,11 @@
                 <li><b>padEnd()</b> : pads a string with another string from the end.</li>
                 <li>The padStart() and the padEnd() methods are string methods. To pad a number, convert the number to a string first using toString() method.</li>
                 <br><br>There are 3 methods for extracting string characters:
+                <ol>
+                    <li>charAt()</li>
+                    <li>charCodeAt()</li>
+                    <li>Property Access</li>
+                </ol>
                 <li><b>charAt()</b> : returns the character at a specified index (position) in a string.</li>
                 <li><b>charCodeAt()</b> : returns the unicode of the character at a specified index in a string (as UTF-16: an integer between 0 and 65535).</li>
                 <li><b>Property Access</b> : might be a little unpredictable because it makes strings look like arrays (but they are not).</li>
@@ -168,6 +177,48 @@
                 <li>If the separator is omitted, the returned array will contain the whole string in index [0].</li>
                 <li>If the separator is "", the returned array will be an array of single characters.</li>
             </ul>
+            <br><br>
+            <strong>JavaScript Search Methods</strong>
+            <ul>
+                <li><b>indexOf()</b> : returns the index of (the position of) the first occurrence of a specified text in a string.</li>
+                <li><b>lastIndexOf()</b> : returns the index of the last occurrence of a specified text in a string.</li>
+                <li>Both indexOf(), and lastIndexOf() return -1 if the text is not found.</li>
+                <li>Both methods accept a second parameter as the starting position for the search.</li>
+                <li>The lastIndexOf() methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.</li>
+                <li><b>The search()</b> : searches a string for a specified value and returns the position of the match.</li>
+                <li>The search() method cannot take a second start position argument.</li>
+                <li>The indexOf() method cannot take powerful search values (regular expressions).</li>
+                <li><b>The match()</b> : searches a string for a match against a regular expression, and returns the matches, as an array object containing the matches, one item for each match, or null if no match is found.</li>
+                <li>If a regular expression does not include the g modifier (to perform a global search), the match() method will return only the first match in the string.</li>
+                <li><b>includes()</b> : returns true if a string contains a specified value.</li>    
+                <li><b>startsWith()</b> : returns true if a string begins with a specified value, otherwise false.</li>
+                <li>The startsWith() method is case sensitive.</li>
+                <code>
+                    string.startsWith(searchvalue, start)
+                </code>
+                <li><b>endsWith()</b> : returns true if a string ends with a specified value, otherwise false.</li>
+                <li>The endsWith() method is case sensitive.</li>
+                <code>
+                    string.endsWith(searchvalue, length)
+                </code>
+        <h3>String Templates</h3>
+        <strong>Synonyms</strong>
+        <ul><li>Template Literals</li>
+            <li>Template Strings</li>
+            <li>Back-Tics Syntax</li>
+        </ul>
+        <ul>
+            <li>Template Literals use back-ticks (``) rather than the quotes ("") to define a string.</li>
+            <li>With template literals, you can use both single and double quotes inside a string.</li>
+            <li>Template literals allow multiline strings.</li>
+            <li>Template literals provide an easy way to interpolate variables and expressions into strings.</li>
+            <li>The method is called string interpolation.</li>
+            <code>
+                ${...}
+            </code>
+            <li>Template literals allow variables and expressions in strings.</li>
+            <li>Automatic replacing of variables and expressions with real values is called string interpolation.</li>
+        </ul>
         </p>
 
         <h2>JavaScript Numbers, Booleans and Strings as Objects</h2>
