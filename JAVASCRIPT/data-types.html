@@ -223,7 +223,7 @@
 
         <h2>JavaScript Numbers, Booleans and Strings as Objects</h2>
         <p>
-            <ul>
+         <ul>
                 <li>Normally JavaScript Numbers, Booleans and Strings are primitive values created from literals.</li>
                 <li>But they can also be defined as objects with the keyword new.</li>
                 <li>Do not create Numbers, Booleans and Strings objects.</li>
@@ -233,6 +233,117 @@
             <strong>Note: </strong>Comparing two JavaScript objects always return false.
         </p>
 
+        <h1>Arrays</h1>
+        <p>Arrays are a special kind of objects, with numbered indexes.</p>
+
+        <h2>The Difference Between Arrays and Objects</h2>
+        <p>In JavaScript, arrays use numbered indexes and objects use named indexes.</p>
+
+        <p>Using an array literal is the easiest way to create a JavaScript Array.</p>
+
+        <code>const array_name = [item1, item2, ...];</code>>
+
+        <strong>Note: </strong>It is a common practice to declare arrays with the const keyword.
+
+        <p>You can create an array, and then provide the elements.</p>
+
+        <code>
+            const cars = [];
+            cars[0]= "Saab";
+            cars[1]= "Volvo";
+            cars[2]= "BMW";
+        </code>
+
+        <p>You can also create an array with the built-in array constructor new Array().</p>
+        <p>However the new keyword can produce some unexpected results.</p>
+        <p>For simplicity, readability and execution speed, use the array literal method instead.</p>
+
+        <code>const cars = new Array("Saab", "Volvo", "BMW");</code>
+        
+        <h2>When to Use Arrays - When to use Objects</h2>
+        <p>JavaScript does not support associative arrays.</p>
+        <p>You should use objects when you want the element names to be strings (text).</p>
+        <p>You should use arrays when you want the element names to be numbers.</p>
+        
+        <br><br>
+        <p>But you can safely use [] instead.</p>
+
+        <code>
+            const cars = []
+        </code>
+
+        <p>You can have variables of different types in the same Array like objects, functions and arrays.</p>
+
+        <h2>Array Properties and Methods</h2>
+
+        <p>
+            <ul>
+                <li><b>length:</b> returns the the number of array elements.</li>
+                <li>The length property is always one more than the highest array index.</li>
+            </ul>
+        </p>
+
+        <h3>Looping Array Elements</h3>
+
+        <code>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            let fLen = fruits.length;
+            let text = "<ul>";
+            
+            for (let i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+            }
+            
+            text += "</ul>";
+        </code>
+
+        <p>You can also use the Array.forEach() function.</p>
+
+        <code>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            let text = "<ul>";
+            
+            fruits.forEach(myFunction);
+            text += "</ul>";
+
+            function myFunction(value) {
+            text += "<li>" + value + "</li>";
+            }
+        </code>
+
+        <p>
+            <ul>
+                <li>The easiest way to add a new element to an array is using the push() method.</li>
+                <code>
+                    fruits.push("Lemon");
+                </code>
+                <li>New element can also be added to an array using the length property.</li>
+                <code>
+                    fruits[fruits.length] = "Lemon";
+                </code>
+                <li>Adding elements with high indexes can create undefined "holes" in an array.</li>
+            </ul>
+        </p>
+
+        <h3>Associative Arrays</h3>
+            
+        <p>
+            <ul>
+                <li>Many programming languages support arrays with named indexes.</li>
+                <li> Arrays with named indexes are called associative arrays (or hashes).</li>
+                <li>JavaScript does not support arrays with named indexes.</li>
+                <li>In JavaScript, arrays always use numbered indexes.</li>
+                <li>If you use named indexes, JavaScript will redefine the array to an object.</li>
+                <li>After that, some array methods and properties will produce incorrect results.</li>
+            </ul>
+            
+            
+        
+            
+            
+            
+            
+            
     <footer>
         <a href="variables.html">Before: Variables</a>
         <a href="#">After:</a>
