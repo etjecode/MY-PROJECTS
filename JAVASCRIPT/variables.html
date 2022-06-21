@@ -11,12 +11,23 @@
 
 <body>
 
+    <div class="menu">
+        <h1>Variables</h1>
+
+        <p>
+            <a href="#var">var</a>
+            <a href="#let">let</a>
+            <a href="#const">const</a>
+        </p>
+    
+    </div>
+
     <div>
     <h1>JavaScript Variables</h1>
     <p>Variables are containers for storing data values.</p>
     <h2>4 Ways to Declare a JavaScript Variable</h2>
 
-    <h3>var</h3>
+    <h3 id="var">var</h3>
     <p>
     <ul>
         <li>The var keyword is used in all JavaScript code from 1995 to 2015.</li>
@@ -36,7 +47,7 @@
     </ul>
     </p>
 
-    <h3>let</h3>
+    <h3 id="let">let</h3>
     <p>
         <ul>
             <li>The let keyword was introduced in ES6 (2015).</li>
@@ -55,7 +66,7 @@
         </ul>
     </p>        
 
-    <h3>const</h3>
+    <h3 id="const">const</h3>
     <p>
         <ul>
             <li>The const keyword was introduced in ES6 (2015).</li>
@@ -87,40 +98,36 @@
         <li>Before ES6 (2015), JavaScript had only <strong>Global Scope</strong> and <strong>Function Scope</strong>.</li>
         <li>ES6 introduced two important new JavaScript keywords: let and const.</li>
         <li>These two keywords provide <strong>Block Scope</strong> in JavaScript.</li>
-        <li>Variables declared inside a { } block cannot be accessed from outside the block.</li>
+        <li>Meaning: Variables declared inside a { } block cannot be accessed from outside the block.</li>
         <li>Variables declared with the var keyword can NOT have block scope.</li>
-        <li>Variables declared inside a { } block can be accessed from outside the block.</li>
+        <li>Meaning: Variables declared inside a { } block can be accessed from outside the block.</li>
     </ul>
     </p>
 
-    <h2>undefined</h2>
-    <p>A variable declared without a value will have the value <strong>undefined</strong></p>
-
     <h2>Re-declaring JavaScript Variables</h2>
     <p>
-    <ul>
-        <li>Variables defined with var can be Redeclared.</li>
-        <li>If you re-declare a JavaScript variable declared with var, it will not lose its value.</li>
-        <li>You cannot re-declare a variable declared with let or const.</li>
-        <li>However, redeclaring a variable using the var keyword can impose problems.</li>
-        <li>Redeclaring a variable inside a block will also redeclare the variable outside the block.</li>
-        <li>Redeclaring a variable using the let keyword can solve this problem.</li>
-        <li>Redeclaring a variable inside a block will not redeclare the variable outside the block.</li>
-        <li>Redeclaring a JavaScript variable with var is allowed anywhere in a program.</li>
-        <li>With let, redeclaring a variable in the same block is NOT allowed.</li>
-        <li>However, redeclaring a variable with let, in another block, IS allowed.</li>
-    </ul>
+        <ul>
+            <li>Variables defined with var can be Redeclared.</li>
+            <li>If you re-declare a JavaScript variable declared with var, it will not lose its value.</li>
+            <li>However, redeclaring a variable using the var keyword can impose problems.</li>
+            <li>Redeclaring a variable inside a block will also redeclare the variable outside the block.</li>
+            <li>Redeclaring a variable using the let keyword can solve this problem.</li>
+            <li>You cannot re-declare a variable declared with let or const.</li>
+            <li>Redeclaring a variable with let inside a block will not redeclare the variable outside the block.</li>
+            <li>Redeclaring a JavaScript variable with var is allowed anywhere in a program.</li>
+            <li>With let, redeclaring a variable in the same block is NOT allowed.</li>
+            <li>However, redeclaring a variable with let, in another block, IS allowed.</li>
+        </ul>
     </p>
 
     <h2>Hoisting</h2>
     <p>
-    <ul>
-        <li>Variables defined with var are hoisted to the top and can be initialized at any time.</li>
-        <li>Meaning: You can use the variable before it is declared.</li>
-        <li>Variables defined with let and const are also hoisted to the top of the block, but not initialized.</li>
-        <li>Meaning: Using a let or const variable before it is declared will result in a ReferenceError.</li>
-        </li>
-    </ul>
+        <ul>
+            <li>Variables defined with var are hoisted to the top and can be initialized at any time.</li>
+            <li>Meaning: You can use the variable before it is declared.</li>
+            <li>Variables defined with let and const are also hoisted to the top of the block, but not initialized.</li>
+            <li>Meaning: Using a let or const variable before it is declared will result in a ReferenceError.</li>
+        </ul>
     </p>
 
     <h2>JavaScript Identifiers</h2>
@@ -143,39 +150,30 @@
     </ul>
     </p>
 
-    <h2>JavaScript Arithmetic</h2>
-    <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
-
-
     <h2>Constant Objects and Arrays</h2>
 
-<p>The keyword const is a little misleading. It does not define a constant value. It defines a constant reference to a value. Because of this you can NOT:
-<ul>
-<li>Reassign a constant value</li>
-<li>Reassign a constant array</li>
-<li>Reassign a constant object</li>
-</ul>
-</p>
+    <p>The keyword const is a little misleading. It does not define a constant value. It defines a constant reference to a value. Because of this you can NOT:
+        <ul>
+            <li>Reassign a constant value</li>
+            <li>Reassign a constant array</li>
+            <li>Reassign a constant object</li>
+        </ul>
+    </p>
 
-<p>But you CAN:
-<ul>
-    <li>Change the elements of constant array</li>
-    <li>Change the properties of constant object</li>
-</ul></p>
+    <p>But you CAN:
+        <ul>
+            <li>Change the elements of constant array</li>
+            <li>Change the properties of constant object</li>
+        </ul>
+    </p>
 
-<h3>Constant Arrays</h3>
-<p>You can change the elements of a constant array but you can NOT reassign the array.</p>
+    <h3>Constant Arrays</h3>
+    
+    <p>You can change the elements of a constant array but you can NOT reassign the array.</p>
 
-<h3>Constant Objects</h3>
-<p>You can change the properties of a constant object but you can NOT reassign the object.</p>
-
-</div>
-
-<div>
-    <h1>JavaScript Type Operators</h1>
-    <ul><li><strong>typeof</strong> returns the type of a variable.</li>
-        <li><strong>instanceof</strong> returns true if an object is an instance of an object type.</li></ul>
-</div>
+    <h3>Constant Objects</h3>
+    
+    <p>You can change the properties of a constant object but you can NOT reassign the object.</p>
 
 <footer>
     <a href="index.html">Before: Introduction</a>

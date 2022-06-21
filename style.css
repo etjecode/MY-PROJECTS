@@ -1,6 +1,7 @@
 * {
     background-color: rgb(42, 42, 42);
     color: whitesmoke;
+    align-items: center;
 }
 
 h1, h2, h3, h4 {
@@ -45,4 +46,10 @@ a:hover {
     flex-direction: column;
     font-size: 36px;
     align-items: center;
+}
+
+.footer {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
 }
