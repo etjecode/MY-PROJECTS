@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lessons</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <h1>CSS Colors</h1>
+
+        <h2>CSS Color Names</h2>
+    
+        <code>style="color:Tomato;"</code>
+
+        <p>
+            <strong>Note: </strong>CSS/HTML support 140 standard color names.
+        </p>
+            
+        <h2>RGB - rgb(red, green, blue)</h2>
+
+        <p>Each parameter defines the intensity of the color between 0 and 255 (decimal).</p>
+
+        <code>
+            style="background-color:rgb(255, 99, 71);"
+        </code>
+
+        <p><strong>Note: </strong>Shades of gray are often defined using equal values for all the 3 light sources.</p>
+
+        <h2>RGBA - rgba(red, green, blue, alpha)</h2>
+
+        <p>
+            <strong>Note: </strong>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all) and it specifies the opacity for a color.</p>
+
+        <code>style="background-color:rgba(255, 99, 71, 0.5);"</code>
+
+        <h2>HEX - #rrggbb</h2>
+
+        <p>rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+
+        <code>
+            style="background-color:#ff6644;"
+        </code>
+
+        <p>
+            <strong>Note: </strong>Shades of gray are often defined using equal values for all the 3 light sources.</p>
+
+        <h3>3 Digit HEX Value (#rgb)</h3>
+
+        <p>The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each components.</p>
+    
+        <code>
+            style="background-color:#f64;"
+        </code>
+
+        <h2>HSL - hsl(hue, saturation%, lightness%)</h2>
+
+        <code>
+            style="background-color:hsl(9, 100%, 64%);"
+        </code>
+
+        <p>
+            <strong>Hue</strong> is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+    
+        <p>
+            <strong>Saturation</strong> is a percentage value, 0% means a shade of gray, and 100% is the full color. It can be described as the intensity of a color.
+            <br><br>100% is pure color, no shades of gray.
+            <br><br>50% is 50% gray, but you can still see the color.
+            <br><br>0% is completely gray, you can no longer see the color.
+        </p>
+    
+        <p>
+            <strong>Lightness</strong> is also a percentage, 0% is black, 50% is neither light or dark, 100% is white. It can be described as how much light you want to give the color.
+            <br><br>0% means no light (black).
+            <br><br>50% means 50% light (neither dark nor light).
+            <br><br>100% means full lightness (white).
+        </p>
+    
+        <p>
+            <strong>Note: </strong>Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0% to 100% to get darker/lighter shades.
+        </p>
+
+        <h2>HSLA - hsla(hue, saturation%, lightness%, alpha)</h2>
+
+        <p>
+            <strong>Note: </strong>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all) and it specifies the opacity for a color.
+        </p>
+
+        <code>
+            style="background-color:hsla(9, 100%, 64%, 0.5);"
+        </code>
+
+    </div>
+
+    <footer class="footer">
+        <a href="borders.html">Borders</a>
+    </footer>
+
+</body>
+</html>        

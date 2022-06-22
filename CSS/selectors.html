@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lessons</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <h1>CSS Selectors</h1>
+
+        <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+            <li>Pseudo-class selectors (select elements based on a certain state)</li>
+            <li>Pseudo-elements selectors (select and style a part of an element)</li>
+            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+        </ul>
+
+        <h2>All CSS Simple Selectors</h2>
+
+        <h3>The CSS Element Selector</h3>
+
+        <code>
+            p {
+            text-align: center;
+            color: red;
+            }
+        </code>
+        <br><br>
+        <code>
+            h1, h2, p {
+            text-align: center;
+            color: red;
+        }
+        </code>
+
+        <h3>The CSS Id Selector</h3>
+
+        <code>
+            #para1 {
+            text-align: center;
+            color: red;
+            }
+        </code>
+        <br><br>
+        <strong>Note: </strong>An id name cannot start with a number!
+
+        <h3>The CSS Class Selector</h3>
+
+        <code>
+            .center {
+            text-align: center;
+            color: red;
+            }
+        </code>
+
+        <br><br>
+
+        <code>
+            p.center {
+            text-align: center;
+            color: red;
+            }
+        </code>
+
+        <br><br>
+
+        <strong>Note: </strong>A class name cannot start with a number!
+
+        <h3>The CSS Universal Selector</h3>
+
+        <strong>Note: </strong>The universal selector (*) selects all HTML elements on the page.
+
+        <br><br>
+
+        <code>
+            * {
+            text-align: center;
+            color: blue;
+            }
+        </code>
+
+    </div>
+
+    <footer class="footer">
+        <a href="colors.html">Colors</a>
+    </footer>
+
+</body>
+
+</html>

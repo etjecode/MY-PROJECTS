@@ -112,6 +112,20 @@
                 <li>It can take two arguments like slice(1, 3).</li>
                 <li>It selects elements from the start argument, and up to (but not including) the end argument.</li>
                 <li>If the end argument is omitted, like in the first examples, it slices out the rest of the array.</li>
+                <li>sort() : sorts an array alphabetically. By default, it sorts values as strings.</li>
+                <li>reverse() : reverses the elements in an array. You can use it to sort an array in descending order.</li>
+                <li>If numbers are sorted as strings, it will produce incorrect result.</li>
+                <li>You can fix this by providing a compare function.</li>
+                <li>The purpose of the compare function is to define an alternative sort order.</li>
+                <li>There are no built-in functions for finding the max or min value in an array.</li>
+                <li>However, after you have sorted an array, you can use the index to obtain the highest and lowest values.</li>
+                <li>Sorting a whole array is a very inefficient method if you only want to find the highest (or lowest) value.</li>
+                <li>You can use Math.max.apply to find the highest, and Math.min.apply to find the lowest number in an array.</li>
+                <code>
+                    function myArrayMax(arr) {
+                        return Math.max.apply(null, arr);
+                    }
+                </code>
             </ul>
         </p>
 
