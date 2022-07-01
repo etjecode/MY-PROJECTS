@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="/index.js"></script>
+</head>
+<body>
+
+
+    <h1>HTML DOM Events</h1>
+    
+    <h2>JavaScript HTML Events</h2>
+
+    <h3>The onclick Event</h3>
+
+    <p>An onclick attribute (with code), is added to a button element to change the content of the "p" element (id="demo") below it:</p>
+
+    <code>onclick="document.getElementById('demo').innerHTML=Date()"</code>
+
+    <br><br>
+    
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <br><br>
+
+    <p id="demo"></p>
+
+    <br>
+
+    <p>The code changes the content of its own element (using this.innerHTML):</p>
+
+    <code>onclick="this.innerHTML='YOU CLICKED ME!'"</code>
+
+    <br><br>
+
+    <p id="demo2" onclick="this.innerHTML='YOU CLICKED ME!'">Click me.</p>
+
+    <br><br>
+
+    <code>onclick="this.innerHTML=Date()"</code>
+
+    <br><br>
+
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+
+    <br><br>
+
+    <p>Event attributes can call functions to execute JS code:</p>
+
+    <code>onclick="myFunction()"</code>
+
+    <p>The onclick event triggers a function when an element is clicked on.</p>
+    
+    <p>Click to trigger a function that will output "Hello World" as the content of the "p" element (id="demo3") below it:</p>
+    
+    <p>Function is defined in the script element.</p>
+
+    <code>
+        function myFunction() {
+        document.getElementById("demo3").innerHTML = "Hello World";
+        } 
+    </code>
+
+    <br><br>
+
+    <button onclick="myFunction()">Click me</button>
+
+    <br><br>
+
+    <p id="demo3"></p>
+
+    <script>
+        function myFunction() {
+        document.getElementById("demo3").innerHTML = "Hello World";
+        }
+    </script>
+
+    <br><br>
+
+    <code>
+        function displayDate() {
+        document.getElementById("demo4").innerHTML = Date();
+        }
+    </code>
+
+    <br><br>
+    
+    <button onclick="displayDate()">The time is?</button>
+
+    <script>
+        function displayDate() {
+        document.getElementById("demo4").innerHTML = Date();
+        }
+    </script>
+
+    <br><br>
+
+    <p id="demo4"></p>
+
+    <br><br>
+
+    <code>
+        function pClick() {
+        document.getElementById("demo5").innerHTML = "YOU CLICKED ME!";
+        }
+    </code>
+
+    <br><br>
+
+    <p id="demo5" onclick="pClick()">Click me.</p>
+
+    <script>
+        function pClick() {
+        document.getElementById("demo5").innerHTML = "YOU CLICKED ME!";
+        }
+    </script>
+
+    <br><br>
+
+    <p>Use the addEventListener() method to attach a "click" event to a "p" element (id="demo6"):</p>
+
+    <code>
+        document.getElementById("demo6").addEventListener("click", clickFunction);
+    <br>
+        function clickFunction() {
+          this.innerHTML = "YOU CLICKED ME!";
+        }
+    </code>
+
+    <br><br>
+
+    <p id="demo6">Click me.</p>
+
+    <script>
+        document.getElementById("demo6").addEventListener("click", clickFunction);
+
+        function clickFunction() {
+            this.innerHTML = "YOU CLICKED ME!";
+        }
+    </script>
+
+    <br>
+
+    <p>Use the same method to change the content of the "input" element below the "p" element:</p>
+
+    <code>
+        document.getElementById("demo7").addEventListener("click", clickFunction);
+    <br>
+        function clickFunction() {
+            document.getElementById("demo8").value = "Output";
+        }
+    </code>
+
+    <br><br>
+
+    <p id="demo7">Click me.</p>
+
+    <br><br>
+
+    <input id="demo8" type="text" />
+
+    <script>
+        document.getElementById("demo7").addEventListener("click", clickFunction);
+
+        function clickFunction() {
+            document.getElementById("demo8").value = "Output";
+        }
+    </script>
+
+    <br><br>
+
+    <p>Use the addEventListener() method to trigger two functions or one function with many actions:</p>
+
+    <code>
+        document.getElementById("demo9").addEventListener("click", triggerFunction);
+        <br>
+        function triggerFunction() {
+        <br>
+            this.innerHTML = "You changed the button's color.";
+        <br>
+            document.getElementById("demo10").style.backgroundColor = "palevioletred";
+        <br>
+            document.getElementById("demo10").innerHTML = "A Pink Button";
+        }
+    </code>
+
+    <br><br>
+
+    <p id="demo9">Click here to change the button's color.</p>
+
+    <br>
+
+    <button id="demo10">A Green Button</button>
+    
+    <script>
+        document.getElementById("demo9").addEventListener("click", triggerFunction);
+
+        function triggerFunction() {
+            this.innerHTML = "You changed the button's color.";
+            document.getElementById("demo10").style.backgroundColor = "palevioletred";
+            document.getElementById("demo10").innerHTML = "A Pink Button";
+        }
+    </script>
+
+</body>
+</html>

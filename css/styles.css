@@ -1,0 +1,137 @@
+* {
+  font-family: sans-serif;
+  font-size: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+
+hr {
+  background-color: #e7e4e4;
+}
+
+.content {
+  color: #ecba13;
+  width: auto;
+  height: 30px;
+  padding-top: 5px;
+  padding-right: 160px;
+  padding-left: 160px;
+  letter-spacing: 0.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: url("../images/body_bg.png");
+}
+
+.content-title {
+  color: #ecba13;
+}
+
+.content-title span {
+  color: #a3a1a1;
+  padding-right: 5px;
+}
+
+.content-title a {
+  text-decoration: none;
+  color: #ecba13;
+}
+
+.content-title a:visited {
+  color: #ecba13;
+}
+
+.content-rss img {
+  vertical-align: middle;
+}
+
+.content-rss span {
+  color: #636161;
+}
+
+.content-rss a {
+  text-decoration: none;
+  color: #a3a1a1;
+}
+
+.content-rss a:visited {
+  color: #a3a1a1;
+}
+
+.content-rss a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #e7e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0;
+}
+
+.navbar-logo {
+  color: #1f1e1e;
+}
+
+.navbar-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar-username input {
+  background-image: url(../images/input_bg1.png);
+  background-color: #e7e4e4;
+  width: 131px;
+  height: 32px;
+  border: none;
+}
+
+.navbar-username a {
+  text-decoration: none;
+  color: #7e0b0b;
+}
+
+.navbar-username a:visited {
+  color: #7e0b0b;
+}
+
+.navbar-username a:hover {
+  text-decoration: underline;
+}
+
+.navbar-username span {
+  color: #7e0b0b;
+}
+
+.navbar-username span a {
+  text-decoration: none;
+  color: #1f1e1e;
+}
+
+.navbar-username span a:visited {
+  color: #1f1e1e;
+}
+
+.navbar-username span a:hover {
+  text-decoration: underline;
+}
+
+.navbar-password input {
+  background-image: url(../images/input_bg2.png);
+  background-color: #e7e4e4;
+  width: 131px;
+  height: 32px;
+  border: none;
+}
+/*# sourceMappingURL=styles.css.map */
