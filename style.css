@@ -4,12 +4,16 @@
     align-items: center;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: aqua;
     padding: 20px;
 }
 
-p, li {
+p,
+li {
     font-size: 18px;
     padding: 10px;
     margin: auto;
@@ -54,14 +58,69 @@ a:hover {
     justify-content: center;
 }
 
-#demo, #demo1, #demo2, #demo3, #demo4, #demo5, #demo6, #demo7, #demo8, #demo9 {
-    background-color: aliceblue;
-    display:inline-block;
-    color:rgb(42, 42, 42)
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-#demo10  {
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black
+}
+
+.show {
+    display: block;
+}
+
+#demo,
+#demo1,
+#demo2,
+#demo3,
+#demo4,
+#demo5,
+#demo6,
+#demo7,
+#demo8,
+#demo9,
+#demo11 {
+    background-color: aliceblue;
+    display: inline-block;
+    color: rgb(42, 42, 42)
+}
+
+#demo10,
+#dem012 {
     background-color: yellowgreen;
     font-size: 20px;
-    color:rgb(42, 42, 42)
+    color: rgb(42, 42, 42)
 }
