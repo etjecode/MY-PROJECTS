@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+}
+
+#canvas {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#Red {
+    background-color: red;
+}
+
+#Green {
+    background-color: green;
+}
+
+#Blue {
+    background-color: blue;
+}
+
+#Yellow {
+    background-color: yellow;
+}
+
+#Purple {
+    background-color: purple;
+}
